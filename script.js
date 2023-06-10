@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateBalance() {
         var balance = data.reduce(function(acc, item) {
-            if (item.type === "income") {
+            if (item.type === "Recieve") {
                 return acc + item.amount;
             } else {
                 return acc - item.amount;
             }
         }, 0);
 
-        balanceElement.innerText = "$" + balance.toFixed(2);
+        balanceElement.innerText = "৳" + balance.toFixed(2);
     }
 
     function addIncomeExpense() {
