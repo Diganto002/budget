@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }, 0);
 
-        balanceElement.innerText = "৳" + balance.toFixed(2);
+        balanceElement.innerText = "$" + balance.toFixed(2);
     }
 
     function addIncomeExpense() {
