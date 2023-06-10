@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateBalance() {
         var balance = data.reduce(function(acc, item) {
-            if (item.type === "Recieve") {
+            if (item.type === "income") {
                 return acc + item.amount;
             } else {
                 return acc - item.amount;
